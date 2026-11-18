@@ -6,7 +6,4 @@ def sigmoid(x: list | float) -> np.ndarray | float:
     """
     # Write code here
     vectorized=np.array(x)
-    denominator=1+np.exp(-vectorized)
-    result=1/denominator
-    return result
-    pass
+    return 1/(1+np.exp(-vectorized))
